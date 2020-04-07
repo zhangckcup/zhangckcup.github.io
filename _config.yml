@@ -2,3 +2,4 @@ title: Welcome!
 description: 一个可以发布自己博客的简单网站。
 show_downloads: false
 theme: jekyll-theme-dinky
+markdown: kramdown
