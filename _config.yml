@@ -1,5 +1,4 @@
-title: Dinky theme
-description: Dinky is a red hot theme for GitHub Pages.
-show_downloads: true
-google_analytics:
+title: Welcome!
+description: 一个可以发布自己博客的简单网站。
+show_downloads: false
 theme: jekyll-theme-dinky
