@@ -40,21 +40,21 @@ This paper mainly divides into six parts, the first part mainly introduces the b
 
 From the perspective of equilibrium theory, most economists believe that real estate supply and demand determine the real estate prices, the main factor in real estate prices rising is supply and demand imbalance. Decaro [3] pointed out that the causes of real estate market fluctuations in supply and demand, the vacancy rate, monetary policy, employment level, population structure and trends. Choy [2] using the feature model to find the size of residential property, the higher the floor, the better the viewing angle, the higher the price of housing, while the location of the metro will make a larger premium. Different from the above theory, Johansen [5] argued that the market demand and the building materials are not the determining factor, the expected price is the determining factor prices, which provides the theoretical basis for the later option pricing model.
 
->在均衡理论方面，大多数经济学家认为房地产供求关系决定了房地产价格，房地产价格上涨的主要因素是供需失衡。Decaro$^{[3]}$指出，导致房地产市场供求波动的原因有房屋空置率、货币政策、就业水平、人口结构和人口流动趋势。Choy$^{[2]}$使用特征模型得到住宅物业的大小、楼层、视角与住房价格呈正相关关系，而靠近地铁的位置将带来更大的溢价。与上述理论不同，Johansen$^{[5]}$认为市场需求和建材不是决定因素，预期价格是价格的决定因素，这为以后的期权定价模型提供了理论基础。
+>在均衡理论方面，大多数经济学家认为房地产供求关系决定了房地产价格，房地产价格上涨的主要因素是供需失衡。Decaro $^{[3]}$ 指出，导致房地产市场供求波动的原因有房屋空置率、货币政策、就业水平、人口结构和人口流动趋势。Choy $^{[2]}$ 使用特征模型得到住宅物业的大小、楼层、视角与住房价格呈正相关关系，而靠近地铁的位置将带来更大的溢价。与上述理论不同，Johansen $^{[5]}$ 认为市场需求和建材不是决定因素，预期价格是价格的决定因素，这为以后的期权定价模型提供了理论基础。
 
 Domestic scholars generally believe that the housing price is determined by market supply and demand, but some scholars believe that due to the inelastic supply of real estate in the short term, so the demand is the major determinant of housing prices. Yao and Huang [12] studied “the relationship between land and housing prices”, they think the premium associated with housing prices, but non-linear relationship, even if land prices, house prices are not necessarily risen. Other costs were tested only Rigid no decline in space, and developers have to unprofitable point, rise in land prices will be fully reflected in the price, the direct cause of rising house prices. Existing housing prices depend on the ability of existing residents pay demand, prices rose mainly due to the demand-driven rather than cost-driven. Zhang and Zhou [13] thought that with the change of the purchase subject, buying motives, needs and values change in function, the impact of changes in customer demand, changes in customer demand affect property values, causing price changes. Degree of realization of real estate value and customer awareness of the value of real estate as well as market supply and demand related. Deng and Li [4] through gray prediction method, the surface of investment demand price fluctuations than the consumer demand for a stronger explanatory power, while the psychological expectations, buyers down payment policy relative to other factors greater impact on prices.
 
->国内学者普遍认为，住房价格是由市场供求关系决定的，但也有学者认为，由于房地产短期供应缺乏弹性，因此需求是住房价格的主要决定因素。Yao和Huang$^{[12]}$研究了“土地和房屋价格之间的关系”，他们认为土地溢价与房屋价格有关，但是非线性关系，即使土地价格上涨，房屋价格不一定上涨。其他成本仅经过检测没有下降的空间，而开发商几乎已经到了无利可图的地步，土地价格的上涨将充分体现在房价中，直接导致房价上涨。Zhang和Zhou$^{[13]}$认为，随着购买主体、购买动机、需求和价值功能的转变，以及顾客对财产价值需求的转变，导致房地产价格发生改变。房地产价值的实现程度与客户对房地产价值的意识以及市场供求关系密切。Deng和Li$^{[4]}$通过灰色预测法得出，在导致价格波动的因素中，投资需求比消费者需求具有更强的解释力，同时从心理预期来看，购房者的首付政策等其他因素对价格的影响更大。
+>国内学者普遍认为，住房价格是由市场供求关系决定的，但也有学者认为，由于房地产短期供应缺乏弹性，因此需求是住房价格的主要决定因素。Yao和Huang $^{[12]}$ 研究了“土地和房屋价格之间的关系”，他们认为土地溢价与房屋价格有关，但是非线性关系，即使土地价格上涨，房屋价格不一定上涨。其他成本仅经过检测没有下降的空间，而开发商几乎已经到了无利可图的地步，土地价格的上涨将充分体现在房价中，直接导致房价上涨。Zhang和Zhou $^{[13]}$ 认为，随着购买主体、购买动机、需求和价值功能的转变，以及顾客对财产价值需求的转变，导致房地产价格发生改变。房地产价值的实现程度与客户对房地产价值的意识以及市场供求关系密切。Deng和Li $^{[4]}$ 通过灰色预测法得出，在导致价格波动的因素中，投资需求比消费者需求具有更强的解释力，同时从心理预期来看，购房者的首付政策等其他因素对价格的影响更大。
 
 >### 2.2 房地产价格预测方法的文献
 
 Two basic methods in analysis of the use of foreign scholars on urban housing prices hedonic price methodology and repeat-sale methodology. Changes in prices abroad more in-depth analysis, such as Malpezzi [9] for the price-earnings ratio and price changes obtained by the error correction model the previous price and income changes and short-term effects for the price elasticity of supply weak conclusion. Seko [10] believed that the price of housing and economic fundamentals in Japan each region has a strong correlation. He used the time series model predicting the housing prices selected key indicators include privately owned residential average selling price, household income, population, residential construction area, the consumer price index and the vacancy rate. Anglin [1] introduced the average house price growth rate of lag three period and CPI, mortgage rates and unemployment rates, VAR model, to predict many rounds Rate changes.
 
->国外学者在城市住房价格分析上的两种基本方法分别是特征价格分析和重复销售（repeat-sales）分析。对房地产价格变化的研究，国外具有更深入地分析，如Malpezzi$^{[9]}$通过分析市盈率和房地产价格变动得到的误差修正模型，得到先前的价格和收入变动以及短期影响对于供给价格弹性影响较弱的结论。Seko$^{[10]}$认为，日本各个地区的住房价格和经济基本面具有很强的相关性。他使用时间序列模型预测房价，所选的关键指标包括私有住宅的平均销售价格、家庭收入、人口、住宅建筑面积、居民消费价格指数和空置率。Anglin$^{[1]}$引入了滞后三阶的平均房价增长率以及CPI、抵押贷款率和失业率的VAR模型，以预测多轮利率的变化。
+>国外学者在城市住房价格分析上的两种基本方法分别是特征价格分析和重复销售（repeat-sales）分析。对房地产价格变化的研究，国外具有更深入地分析，如Malpezzi $^{[9]}$ 通过分析市盈率和房地产价格变动得到的误差修正模型，得到先前的价格和收入变动以及短期影响对于供给价格弹性影响较弱的结论。Seko $^{[10]}$ 认为，日本各个地区的住房价格和经济基本面具有很强的相关性。他使用时间序列模型预测房价，所选的关键指标包括私有住宅的平均销售价格、家庭收入、人口、住宅建筑面积、居民消费价格指数和空置率。Anglin $^{[1]}$ 引入了滞后三阶的平均房价增长率以及CPI、抵押贷款率和失业率的VAR模型，以预测多轮利率的变化。
 
 Domestic scholars on housing prices more, mostly using linear regression, principal component analysis and long-term trends and other methods to study the factors affecting the housing price and the change process. Zhang and Yang [14] established the benchmark land price forecasting model based on BP neural network. Li and Ma [6] used the gray system GM (1, 1) model to predict the real estate prices. Yan [11] selected macroeconomic, financial and other nine categories of indicators to propose the price forecasting model based on TEI@I method. Liu and Wang [7] applied multiple factors regression, state space model and Kalman filter to predict the trend of real estate prices in China. Ma and Liu [8] built DSGE model to reflect the relationship between real estate price fluctuations and monetary policy regulation.
 
->国内学者对房价的研究较多，大多采用线性回归，主成分分析和长期趋势预测等方法来研究影响房屋价格及其变化过程的因素。Zhang和Yang$^{[14]}$建立了基于BP神经网络的基准地价预测模型。Li和Ma$^{[6]}$使用灰色系统GM（1，1）模型来预测房地产价格。Yan$^{[11]}$选择了宏观经济，金融指数和其他九类指标，提出了基于TEI@I方法的房屋价格预测模型。Liu和Wang$^{[7]}$应用多元回归，状态空间模型和卡尔曼滤波器来预测中国房地产价格的趋势。Ma和Liu$^{[8]}$建立了DSGE模型来反映房地产价格波动与货币政策调控之间的关系。
+>国内学者对房价的研究较多，大多采用线性回归，主成分分析和长期趋势预测等方法来研究影响房屋价格及其变化过程的因素。Zhang和Yang $^{[14]}$ 建立了基于BP神经网络的基准地价预测模型。Li和Ma $^{[6]}$ 使用灰色系统GM（1，1）模型来预测房地产价格。Yan $^{[11]}$ 选择了宏观经济，金融指数和其他九类指标，提出了基于TEI@I方法的房屋价格预测模型。Liu和Wang $^{[7]}$ 应用多元回归，状态空间模型和卡尔曼滤波器来预测中国房地产价格的趋势。Ma和Liu $^{[8]}$ 建立了DSGE模型来反映房地产价格波动与货币政策调控之间的关系。
 
 In summary, the existing literature when analyzing factors affecting the price of the real estate market are mostly from a macro perspective to study the relationship between price fluctuations and the fundamentals, and not in-depth study of the impact of fluctuations in the price of various regions, and no specific analysis of the scope of the price change, but the impact of the factors that affect the price fluctuations will bring much impact. However, in the context of China’s economy into the new normal, the fluctuations in the real estate specific price range forecast is particularly important, but no longer limited to the analysis of influencing factors. Based on this, we use a simple and practicable forecasting model—multiple regression analysis to explore the main factors affecting prices according to supply and demand in the market economy principle, and regression analysis and trend analysis of these factors to predict the central and western provinces of real estate future price movements.
 
@@ -69,6 +69,7 @@ In the market mechanism, urban residential real estate prices are mainly determi
 >在市场机制下，城市住宅房地产价格主要由住宅的供求关系决定，同时是城市住房生产和相关社会经济因素共同作用的结果。 根据与房地产有关的现有文献数据，本文从房地产供需两个角度，形成表3.1列出影响房地产价格的因素。
 
 **Table 3.1** List of factors affecting real estate prices
+
 |Level indicators | Secondary indicators | Three indicators |
 |:---|:---|:---|
 |Housing demand|Early economic situation|GDP growth|
@@ -89,9 +90,11 @@ In the market mechanism, urban residential real estate prices are mainly determi
 | | |Building materials purchase price index|
 | |Other factors|Policy factors|
 | | |Social customs|
+
 *Note* GDP represents GDP growth, POPUL represents Number of urban population, PCDI represents Urban residents per capita disposable income, INVEST represents Commercial housing development investment, ASP represents Average selling price of commercial housing, NCA represents Commercial housing new construction area
 
 >**表 3.1** 影响房地产价格的因素
+>
 >|一级指标|二级指标|三级指标|
 >|:---|:---|:---|
 >|住房需求|早期经济状况| GDP增长|
@@ -112,6 +115,7 @@ In the market mechanism, urban residential real estate prices are mainly determi
 >| | |建材购进价格指数|
 >| |其他因素|政策因素|
 >| | |社会习俗|
+>
 >注：GDP代表GDP增长，POPUL代表城镇人口数量，PCDI代表城镇居民人均可支配收入，INVEST代表商品住宅开发投资，ASP代表商品住宅平均售价，NCA代表商品住宅新建筑面积
 
 Taking into account the availability of relevant data, the data can be quantified and missing data for some variables in a given year, so we choose GDP, POPUL, PCDI, INVEST, NCA as explanatory variables in the regression model, select ASP as a regression model explanatory variables.
@@ -156,6 +160,8 @@ As shown in Fig. 45.1, the eastern GDP gross domestic product has maintained a r
 
 ![fig4.1.jpg](./img/fig4.1.jpg)
 
+**fig 4.1** 中国各区域GDP比较
+
 >正如图4.1所示，东部地区的GDP保持了快速增长，并且可能每四年就会跃升到一个新的高度。同时，中国中西部地区的GDP落后于东部地区，并大约只有东部地区总额的一半，中西部地区GDP的增长正在逐渐缩小差距。
 
 #### 4.2.2 中国各区域城镇居民人口比较
@@ -163,6 +169,8 @@ As shown in Fig. 45.1, the eastern GDP gross domestic product has maintained a r
 As shown in Fig. 45.2, due to the rapid economic development in Eastern China, the location and number of the urban population is more than the Midwest. Central and Western China due to economic development is lagging behind, a relatively small number of urban population, while in western China because of geographical reasons, the total urban population of the west less than the east.
 
 ![fig4.2.jpg](./img/fig4.2.jpg)
+
+**fig 4.2** 中国各区域城镇居民人口比较
 
 >正如图4.2所示，由于中国东部地区经济快速发展，其城镇人口的居住区域和数量高于中西部地区。中国中西部由于经济发展落后，城镇人口相对较少，同时由于中国西部的地理原因，西部的城镇人口少于东部地区。
 
@@ -172,6 +180,8 @@ As shown in Fig. 45.3, the provinces per capita disposable income radiate upward
 
 ![fig4.3.jpg](./img/fig4.3.jpg)
 
+**fig 4.3** 中国各区域人均可支配收入比较
+
 >正如图4.3所示，各省人均可支配收入呈放射状上升趋势，各省人均可支配收入呈放射状上升趋势，但东部和中西部人均可支配收入差距逐渐扩大，西部和中部地区人均可支配收入差距缩小，人均可支配收入东部略高于中西部。
 
 #### 4.2.4 中国各区域住宅房地产投资比较
@@ -179,6 +189,8 @@ As shown in Fig. 45.3, the provinces per capita disposable income radiate upward
 As shown in Fig. 45.4, our country from 2009, the real estate yield residential investment showed a rising trend in the provinces. Because of the advantages of its geographical location and area, the real estate investment in East has maintained rapid growth. Property investment growth rate in the central and westernmore gentle, the central provinces where the average residential investment more than the west, which may be due to the central flat, relatively dense population.
 
 ![fig4.4.jpg](./img/fig4.4.jpg)
+
+**fig 4.4** 中国各区域住宅房地产投资比较
 
 >正如图4.4所示，我国从2009年开始，房地产投资住宅的收益率在各省呈上升趋势。由于其地理位置和面积的优势，东部的房地产投资一直保持快速增长。中部和西部的房地产投资增速较为平缓，中部省份的平均住宅投资高于西部，这可能是由于中部地区平坦，人口相对密集。
 
@@ -188,6 +200,8 @@ As shown in Fig. 45.5, the new construction of residential houses of each region
 
 ![fig4.5.jpg](./img/fig4.5.jpg)
 
+**fig 4.5** 各区域新建住宅面积比较
+
 >正如图4.5所示，2005年至2008年，每个地区的新建住宅建设均保持稳定增长，2009年至2011年住宅增长突飞猛进，并在2011年达到顶峰后，2011年新住宅面积开始减少。特别是2014年，新建住宅面积明显减少。总体而言，中国的新住宅面积由于国家政策的影响，出现了增长轨迹的波动形式。
 
 #### 4.2.6  中国各区域住宅平均销售价格比较
@@ -196,19 +210,26 @@ As shown in Fig. 45.6, prices in eastern China is almost twice around theMidwest
 
 ![fig4.6.jpg](./img/fig4.6.jpg)
 
+**fig 4.6** 中国各区域住宅平均销售价格比较
+
 >正如图4.6所示，中国东部地区的价格几乎是中西部地区的两倍，这可能与东部地区的经济发展程度，人口密度，地域因素等有关。西部和中部地区房价一直呈同步增长趋势，这两个地区的房价保持平稳状态。
 
 ### 4.3 数据分析
 
-In this paper, the regression equation was constructed as follows multiple regression model based on the content and assumptions discussed above: 
+In this paper, the regression equation was constructed as follows multiple regression model based on the content and assumptions discussed above:
+
 $$ASP = β_0 +β_1GDP + β_2POPUL + β_3PCDI + β_4INVEST + β_5NCA + μ$$
+
 Amongthem, the variableASP is interpreted to represent the average selling price of commercial housing, the explanatory variables GDP represents GDP growth, POPUL represents the number of urban population, PCDI represents the per capita disposable income of urban residents, INVEST represents the development of commercial housing investment, NCA represents Commercial housing new construction area. In this paper, EVIEWS8.0 software is used to analyze the model, according to Table 45.2 to determine the overall value of the linear regression equation of the relationship is significant.
 
 >本文基于上述内容和假设，按以下多元回归模型构建了回归方程：
+>
 >$$ASP=β_0+β_1 GDP+β_2 POPUL+β_3 PCDI+β_4 INVEST+β_5 NCA+μ$$
+>
 >其中ASP为平均销售价格；GDP为国内生产总值；POPUL为城镇居民人数；PCDI为人均可支配收入；INVEST为住宅商品房投资金额；NCA为新建住宅商品房面积。在本文中，用EVIEWS8.0软件对模型进行分析，根据表4.1确定该线性回归方程的整体值之间的关系是是显著的。
 >
 >**表 4.1** 在本文中，中西部房价回归的显著性
+>
 >|省份|R2|调整R2|F|P|DW|显著性|
 >|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
 >|山西|0.99|0.98|73.96|0|2.23|真|
