@@ -1,17 +1,13 @@
-# zhangckcup.github.io
+<head>
+  <title>Home Page | zhangckcup.github.io</title>
+</head>
 
-[go to My github](https://github.com/zhangckcup)
+# [zhangckcup.github.io](https://zhangckcup.github.io)
 
-## Welcome
+个人主页：[smarty.ink](http://smarty.ink)
 
-[CODE_OF_CONDUCT](docs/CODE_OF_CONDUCT.md)
-
-[CONTRIBUTING](docs/CONTRIBUTING.md)
-
-[SUPPORT](docs/SUPPORT.md)
-
-***
+欢迎光临我的 Github 博客。专注Web前端，力求有所突破。
 
 ## Blog List
 
-[毕业设计翻译部分](assets/translate.md)
+[2020年4月9日 -- 毕业设计翻译部分](assets/translate.md)

@@ -25,7 +25,9 @@
         <header class="col-lg-2">
           <div class="row align-self-lg-start">
             <div class="col">
-              <h1 class="header">{{ site.title | default: site.github.repository_name }}</h1>
+              <a href="https://zhanckcup.github.io">
+                <h1 class="header">{{ site.title | default: site.github.repository_name }}</h1>
+              </a>
               <p class="header">{{ site.description | default: site.github.project_tagline }}</p>
       
               <ul>
@@ -62,6 +64,9 @@
           <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
         </div>
       </footer>
+      <a href="#" id="gototop"><svg class="bi bi-chevron-up" width="16px" height="16px" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 01.708 0l6 6a.5.5 0 01-.708.708L8 5.707l-5.646 5.647a.5.5 0 01-.708-.708l6-6z" clip-rule="evenodd"/>
+      </svg></a>
     </div>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
     {% if site.google_analytics %}
