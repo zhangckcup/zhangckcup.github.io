@@ -204,21 +204,22 @@ td {
  }
 
 header {
-	color: #FDFDFB;
-	border: 1px solid #000;
-	-moz-border-radius: 4px;
-	border-radius: 4px;
-	padding-top: 30px;
 	margin-top:30px;
-	-webkit-font-smoothing: antialiased;
 }
 
 header>.row:first-child{
+	padding-top: 30px;
+  color: #FDFDFB;
+	border: 1px solid #000;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
   background-color: #171717;
+	-webkit-font-smoothing: antialiased;
 }
 
-footer{
+header>div:last-child{
   margin-top: 50vh;
+  color: #000;
 }
 
 p.header {
