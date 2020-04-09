@@ -1,2 +1,19 @@
+---
+---
 
 @import 'jekyll-theme-dinky';
+
+#gototop{
+  position: fixed;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  bottom: 20vh;
+  right: 10vw;
+  color: black;
+  background-color: #eee;
+  box-shadow: 0 0 10px #bbb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
