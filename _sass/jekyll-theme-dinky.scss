@@ -221,6 +221,15 @@ header>div:last-child{
   margin-top: 50vh;
   color: #000;
 }
+header>div:last-child a{
+  color:#C30000;
+  font-weight:200;
+  text-decoration:none;
+}
+
+header>div:last-child a:hover {
+	text-decoration: underline;
+}
 
 p.header {
 	font-size: 16px;
