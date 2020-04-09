@@ -27,7 +27,6 @@ time, mark, audio, video {
 /* Base text styles */
 
 body {
-  padding:10px 50px 0 0;
   font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 14px;
 	color: #232323;
@@ -145,7 +144,7 @@ hr {
 img {
   position: relative;
   margin: 0 auto;
-  max-width: 95%;
+  max-width: 95vw;
   padding: 5px;
   margin: 10px 0 32px 0;
   border: 1px solid #ccc;
