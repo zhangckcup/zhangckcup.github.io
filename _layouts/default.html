@@ -5,45 +5,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 {% seo %}
+    <!-- 上线使用 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     <script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>
+
+    <!-- 开发使用 -->
+    <!-- <link rel="stylesheet" href="../assets/css/bootstrap.css"> -->
+    <!-- <link rel="text/x-scss" href="/assets/css/style.scss"> -->
+
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
   </head>
   <body>
-    <div class="wrapper">
-      <header>
-        <h1 class="header">{{ site.title | default: site.github.repository_name }}</h1>
-        <p class="header">{{ site.description | default: site.github.project_tagline }}</p>
+    <div class="container">
+      <div class="row">
+        <header class="col-lg-2">
+          <div class="container" id="side-info">
+            <div class="row align-self-lg-start">
+              <div class="col">
+                <h1 class="header">{{ site.title | default: site.github.repository_name }}</h1>
+                <p class="header">{{ site.description | default: site.github.project_tagline }}</p>
+        
+                <ul>
+                  {% if site.show_downloads %}
+                    <li class="download"><a class="buttons" href="{{ site.github.zip_url }}">Download ZIP</a></li>
+                    <li class="download"><a class="buttons" href="{{ site.github.tar_url }}">Download TAR</a></li>
+                  {% endif %}
+                  <li><a class="buttons github" href="{{ site.github.repository_url }}">View On GitHub</a></li>
+                </ul>
+        
+                {% if site.github.is_project_page %}
+                  <p class="header">This project is maintained by <a class="header name" href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
+                {% endif %}
+        
+                {% if site.github.is_user_page %}
+                  <ul>
+                    <li><a class="buttons github" href="{{ site.github.owner_url }}">GitHub Profile</a></li>
+                  </ul>
+                {% endif %}
+              </div>
+            </div>
+            <div class="row align-self-lg-start d-none d-lg-block">
+              <div class="col">
+                <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
+              </div>
+            </div>
+          </div>
+        </header>
+        <section class="col-xl-9 col-lg-10 col-md-12">
+          {{ content }}
+        </section>
+        <footer class="row">
+          <div class="col d-lg-none">
+            <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
+          </div>
+        </footer>
+      </div>
 
-        <ul>
-          {% if site.show_downloads %}
-            <li class="download"><a class="buttons" href="{{ site.github.zip_url }}">Download ZIP</a></li>
-            <li class="download"><a class="buttons" href="{{ site.github.tar_url }}">Download TAR</a></li>
-          {% endif %}
-          <li><a class="buttons github" href="{{ site.github.repository_url }}">View On GitHub</a></li>
-        </ul>
-
-        {% if site.github.is_project_page %}
-          <p class="header">This project is maintained by <a class="header name" href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
-        {% endif %}
-
-        {% if site.github.is_user_page %}
-          <ul>
-            <li><a class="buttons github" href="{{ site.github.owner_url }}">GitHub Profile</a></li>
-          </ul>
-        {% endif %}
-      </header>
-
-      <section>
-        {{ content }}
-      </section>
-
-      <footer>
-        <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
-      </footer>
+      
     </div>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
     {% if site.google_analytics %}

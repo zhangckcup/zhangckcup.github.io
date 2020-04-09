@@ -145,7 +145,7 @@ hr {
 img {
   position: relative;
   margin: 0 auto;
-  max-width: 650px;
+  max-width: 95%;
   padding: 5px;
   margin: 10px 0 32px 0;
   border: 1px solid #ccc;
@@ -207,17 +207,12 @@ td {
 
 
 /* Wrapper */
-.wrapper {
-  width:960px;
-}
-
 
 /* Header */
 
 header {
 	background-color: #171717;
 	color: #FDFDFB;
-  width:170px;
   float:left;
   position:fixed;
 	border: 1px solid #000;
@@ -265,7 +260,6 @@ header ul {
 
 header li {
 	list-style-type: none;
-  width:132px;
   height:15px;
 	margin-bottom: 12px;
 	line-height: 1em;
@@ -315,103 +309,12 @@ a.buttons:hover {
 	text-decoration: none;
 }
 
-
-/* Section - for main page content */
-
-section {
-  width:650px;
-  float:right;
-  padding-bottom:50px;
-}
-
-
 /* Footer */
 
 footer {
-  width:170px;
   float:left;
-  position:fixed;
   bottom:10px;
 	padding-left: 50px;
-}
-
-@media print, screen and (max-width: 960px) {
-
-  div.wrapper {
-    width:auto;
-    margin:0;
-  }
-
-  header, section, footer {
-    float:none;
-    position:static;
-    width:auto;
-  }
-
-	footer {
-		border-top: 1px solid #ccc;
-		margin:0 84px 0 50px;
-		padding:0;
-	}
-
-  header {
-    padding-right:320px;
-  }
-
-  section {
-    padding:20px 84px 20px 50px;
-    margin:0 0 20px;
-  }
-
-  header a small {
-    display:inline;
-  }
-
-  header ul {
-    position:absolute;
-    right:130px;
-    top:84px;
-  }
-}
-
-@media print, screen and (max-width: 720px) {
-  body {
-    word-wrap:break-word;
-  }
-
-  header {
-    padding:10px 20px 0;
-		margin-right: 0;
-  }
-
-	section {
-    padding:10px 0 10px 20px;
-    margin:0 0 30px;
-  }
-
-	footer {
-		margin: 0 0 0 30px;
-	}
-
-  header ul, header p.view {
-    position:static;
-  }
-}
-
-@media print, screen and (max-width: 480px) {
-
-  header ul li.download {
-    display:none;
-  }
-
-	footer {
-		margin: 0 0 0 20px;
-	}
-
-	footer a{
-		display:block;
-	}
-
 }
 
 @media print {
