@@ -199,7 +199,7 @@ td {
  }
 
 header {
-	margin-top:30px;
+  margin-top:30px;
 }
 
 header>.row:first-child{
@@ -239,7 +239,7 @@ h1.header {
 	font-weight: 300;
 	line-height: 1.3em;
 	border-bottom: none;
-	margin-top: 0;
+  margin-top: 0;
 }
 
 
@@ -259,14 +259,23 @@ header ul {
   list-style:none;
   padding:0;
 }
-
+@media (min-width:992px){
+header li {
+    margin-left: -4px;
+  }
+}
+@media (min-width:1200px){
+  header li {
+    margin-left: 11px;
+    }
+  }
 header li {
   list-style-type: none;
-  width: 140px;
   height:auto;
+  width: 136px;
 	margin-bottom: 12px;
 	line-height: 1em;
-	padding: 6px 6px 6px 7px;
+	padding: 5px;
 
 	background: #AF0011;
 	background: -moz-linear-gradient(top, #AF0011 0%, #820011 100%);
@@ -299,8 +308,7 @@ a.buttons {
 	background: url(../images/arrow-down.png) no-repeat;
 	font-weight: normal;
 	text-shadow: rgba(0, 0, 0, 0.4) 0 -1px 0;
-	padding: 2px 2px 2px 22px;
-	height: 30px;
+	padding: 2px 2px 2px 20px;
 }
 
 a.github {
