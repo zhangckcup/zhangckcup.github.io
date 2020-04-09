@@ -22,7 +22,7 @@
   <body>
     <div class="container">
       <div class="row">
-        <header class="col-lg-2" id="side-info">
+        <header class="col-lg-2">
           <div class="row align-self-lg-start">
             <div class="col">
               <h1 class="header">{{ site.title | default: site.github.repository_name }}</h1>
@@ -56,14 +56,12 @@
         <section class="col-xl-9 col-lg-10 col-md-12">
           {{ content }}
         </section>
-        <footer class="row d-lg-none">
-          <div class="col">
-            <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
-          </div>
-        </footer>
       </div>
-
-      
+      <footer class="row d-lg-none">
+        <div class="col">
+          <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
+        </div>
+      </footer>
     </div>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
     {% if site.google_analytics %}
