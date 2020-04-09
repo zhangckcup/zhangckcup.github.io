@@ -1,3 +1,6 @@
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.css" integrity="sha384-yFRtMMDnQtDRO8rLpMIKrtPCD5jdktao2TV19YiZYWMDkUR5GQZR/NOVTdquEx1j" crossorigin="anonymous">
+</head>
 <h1 id="%e7%bf%bb%e8%af%91%e5%9f%ba%e4%ba%8e%e7%9c%81%e9%9d%a2%e6%9d%bf%e6%95%b0%e6%8d%ae%e5%88%86%e6%9e%90%e7%9a%84%e4%b8%ad%e5%9b%bd%e4%b8%ad%e8%a5%bf%e9%83%a8%e5%9c%b0%e5%8c%ba%e4%bd%8f%e5%ae%85%e6%88%bf%e5%9c%b0%e4%ba%a7%e4%bb%b7%e6%a0%bc%e9%a2%84%e6%b5%8b%e6%a8%a1%e5%9e%8b%e7%a0%94%e7%a9%b6">翻译：基于省面板数据分析的中国中西部地区住宅房地产价格预测模型研究</h1>
 <h2 id="a-study-on-the-real-estate-price-forecast-model-in-the-midwest-of-chinabased-on-provincial-panel-data-analysis">A Study on the Real Estate Price Forecast Model in the Midwest of China—Based on Provincial Panel Data Analysis</h2>
 <hr>
