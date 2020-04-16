@@ -122,11 +122,22 @@ Long, single-line code blocks should not wrap. They should horizontally scroll i
 The final element.
 ```
 
-## 解析Latex使用以下插件：
+## Show Latex: 
 
 ```html
+<!-- add to top of your Markdown -->
 <script src="/assets/js/mathconfig.js"></script>
 <script type="text/javascript" id="MathJax-script" async
   src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
 </script>
 ```
+
+<script src="/assets/js/mathconfig.js"></script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+
+inline Latex: \\(y = x^2 + 2x +1\\) solve it: \\(x_{1,2}=\pm 1\\)
+
+displaied Latex:
+\\[y = x^2 + 2x +1\\]
