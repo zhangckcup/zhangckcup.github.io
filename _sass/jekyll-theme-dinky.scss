@@ -24,7 +24,7 @@ time, mark, audio, video {
 }
 
 body {
-	font-size: 14px;
+	font-size: 1em;
 	color: #232323;
 	background-color: #FBFAF7;
 	line-height: 1.5em;
@@ -57,15 +57,15 @@ h1,h2, h3 {
 }
 
 h1 {
-	font-size: 30px;
+	font-size: 3rem;
 }
 
 h2 {
-	font-size: 24px;
+	font-size: 2.5rem;
 }
 
 h3 {
-	font-size: 18px;
+	font-size: 2rem;
 }
 
 h4, h5, h6 {
@@ -191,7 +191,7 @@ table {
 
 
 th {
-	font-size: 18px;
+	font-size: 1.25rem;
 	font-weight: normal;
   padding: 10px;
   background: #232323;
@@ -276,18 +276,18 @@ header ul {
 }
 @media (min-width:992px){
 header li {
-    margin-left: -4px;
+    margin-left: -10px;
   }
 }
 @media (min-width:1200px){
   header li {
-    margin-left: 11px;
+    margin-left: 5px;
     }
   }
 header li {
   list-style-type: none;
   height:auto;
-  width: 136px;
+  width: 148px;
 	margin-bottom: 12px;
 	line-height: 1em;
 	padding: 5px;

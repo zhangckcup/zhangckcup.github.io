@@ -4,6 +4,7 @@
   var r = e.querySelectorAll("h2, h3");
   var m = ['<ul>'];
   var ts = [];
+  var isHome = /\/$/.test(window.location.pathname) || /\/index.html$/.test(window.location.pathname);
   r.forEach(function(i){
     if(!i.childElementCount){
       ts = [' <a href="#'+ i.innerHTML.replace(/\s+/g, "-").replace(/\(\)/,'').toLowerCase() +'">', '</a>'];
@@ -12,7 +13,6 @@
     }
   })
   m.push('</ul>');
-  isHome = window.location.pathname === '/' || window.location.pathname === '/index.html';
   if (t  && r.length >= 2 && !isHome) {
       var c = document.createElement("div");
       c.setAttribute("class", "article-toc"),

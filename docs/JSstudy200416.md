@@ -214,3 +214,5 @@ JavaScript 的早期版本，`for...in`循环是基于`in`运算符的。我们�
 * `value`: 只要`writable`和`configurable`有一个为`true`，就允许改动。
 
 ### 存取器
+
+
