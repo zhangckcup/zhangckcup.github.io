@@ -6,12 +6,12 @@
 
 ## Repos List
 
-[zhangckcup/smarty.ink.git](smarty.ink/index.html)
+[zhangckcup/smarty.ink.git](/smarty.ink/index.html)
 
 [zhangckcup/smarty.server.git](/smarty.server/index.html)
 
 ## Blog List
 
-[2020年4月16日 -- JS教程·标准库·Object 读书笔记](docs/2020年4月16日%20--%20JS教程·标准库.html)
+[2020年4月16日 -- JS教程·标准库·Object 读书笔记](docs/JSstudy200416.html)
 
 [2020年4月09日 -- 毕业设计翻译部分](docs/translate.html)
