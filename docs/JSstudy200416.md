@@ -213,6 +213,68 @@ JavaScript 的早期版本，`for...in`循环是基于`in`运算符的。我们�
 * `writable`: 只有在`false`改为`true`会报错，`true`改为`false`是允许的。
 * `value`: 只要`writable`和`configurable`有一个为`true`，就允许改动。
 
-### 存取器
+## 存取器
 
+除了直接定义以外，属性还可以用存取器（accessor）定义。其中，存值函数称为`setter`，使用属性描述对象的`set`属性；取值函数称为`getter`，使用属性描述对象的`get`属性。
 
+```js
+var obj = Object.defineProperty({}, 'p', {
+  get: function () {
+    return 'getter';
+  },
+  set: function (value) {
+    console.log('setter: ' + value);
+  }
+});
+
+var obj = {
+  get p() {
+    return 'getter';
+  },
+  set p(value) {
+    console.log('setter: ' + value);
+  }
+};
+```
+
+注意，取值函数get不能接受参数，存值函数set只能接受一个参数（即属性的值）。
+
+### 对象的拷贝
+
+直接赋值，如果遇到存取器定义的属性，会只拷贝值。为了解决这个问题，我们可以通过Object.defineProperty方法来拷贝属性。
+
+```js
+var extend = function (to, from) {
+  for (var property in from) {
+    if (!from.hasOwnProperty(property)) continue;
+    Object.defineProperty(
+      to,
+      property,
+      Object.getOwnPropertyDescriptor(from, property)
+    );
+  }
+  return to;
+}
+```
+
+上面代码中，`hasOwnProperty`那一行用来过滤掉继承的属性，否则可能会报错，因为`Object.getOwnPropertyDescriptor`读不到继承属性的属性描述对象。
+
+## 控制对象状态
+
+有时需要冻结对象的读写状态，防止对象被改变。JavaScript 提供了三种冻结方法，最弱的一种是`Object.preventExtensions`，其次是`Object.seal`，最强的是`Object.freeze`。
+
+1. `Object.preventExtensions`方法可以使得一个对象无法再添加新的属性。
+
+>`Object.isExtensible`方法用于检查一个对象是否使用了`Object.preventExtensions`方法。也就是说，检查是否可以为一个对象添加属性。
+
+2. `Object.seal`方法使得一个对象既无法添加新属性，也无法删除旧属性。
+
+>`Object.seal`实质是把属性描述对象的`configurable`属性设为`false`，因此属性描述对象不再能改变了。
+>
+>`Object.seal`只是禁止新增或删除属性，并不影响**修改**某个属性的值。
+
+>`Object.isSealed`方法用于检查一个对象是否使用了`Object.seal`方法。
+
+3. `Object.freeze`方法可以使得一个对象无法添加新属性、无法删除旧属性、也无法改变属性的值，使得这个对象实际上变成了常量。
+
+上面的三个方法锁定对象的可写性有一个漏洞：可以通过改变原型对象，来为对象增加属性。
