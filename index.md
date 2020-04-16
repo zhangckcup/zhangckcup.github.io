@@ -1,6 +1,6 @@
 # [zhangckcup.github.io](https://zhangckcup.github.io)
 
-### 个人主页：[smarty.ink](http://smarty.ink)
+## 个人主页：[smarty.ink](http://smarty.ink)
 
 欢迎光临我的 Github 博客。专注Web前端，力求有所突破。
 
@@ -12,6 +12,6 @@
 
 ## Blog List
 
-[2020年4月16日 -- JS教程·标准库 读书笔记](docs/2020年4月16日%20--%20JS教程·标准库.html)
+[2020年4月16日 -- JS教程·标准库·Object 读书笔记](docs/2020年4月16日%20--%20JS教程·标准库.html)
 
 [2020年4月09日 -- 毕业设计翻译部分](docs/translate.html)
