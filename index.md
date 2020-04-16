@@ -12,6 +12,8 @@
 
 ## Blog List
 
+[2020年4月17日 -- JS教程·标准库·Array 读书笔记](docs/JSstudy200417.html)
+
 [2020年4月16日 -- JS教程·标准库·Object 读书笔记](docs/JSstudy200416.html)
 
 [2020年4月09日 -- 毕业设计翻译部分](docs/translate.html)

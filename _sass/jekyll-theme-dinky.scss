@@ -165,7 +165,6 @@ code, pre {
 }
 
 code {
-  background-color: #f8f8f8;
   color: #f14668;
   font-size: .875em;
   font-weight: 400;
@@ -264,6 +263,10 @@ a.header {
   background-color: #f9f9f9;
   display: table;
   padding: 1rem;
+}
+
+.article-toc ul{
+  list-style: none;
 }
 
 a.name {
