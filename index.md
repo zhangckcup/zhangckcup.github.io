@@ -12,4 +12,4 @@
 
 ## Blog List
 
-[2020年4月9日 -- 毕业设计翻译部分](assets/translate.md)
+[2020年4月9日 -- 毕业设计翻译部分](docs/translate.md)
