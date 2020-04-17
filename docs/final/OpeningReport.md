@@ -140,7 +140,7 @@
 \right)}\\)为\\(X^{\left( 0 \right)}\\)一次累加序列：
 
 \\[
-X^{\left( 0 \right)} = \left( X^{\left( 0 \right)}\left( 1 \right),X^{\left( 0 \right)}\left( 2 \right),\ldots,X^{\left( 0 \right)}\left( n \right) \right),X^{\left( 0 \right)}\left( k \right) \geq 0\ \ \left( k = 1,2,\ldots,n \right)
+X^{\left( 0 \right)} = \left( X^{\left( 0 \right)}\left( 1 \right),X^{\left( 0 \right)}\left( 2 \right),\ldots,X^{\left( 0 \right)}\left( n \right) \right),X^{\left( 0 \right)}\left( k \right) \geq 0 \left( k = 1,2,\ldots,n \right)
 \\]
 
 \\[
