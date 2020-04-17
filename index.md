@@ -12,8 +12,10 @@
 
 ## Blog List
 
-[2020年4月17日 -- JS教程·标准库·Array 读书笔记](docs/JSstudy200417.html)
+[2020年4月17日 -- JS教程·标准库·Array 读书笔记](docs/js/stdlibArray.html)
 
-[2020年4月16日 -- JS教程·标准库·Object 读书笔记](docs/JSstudy200416.html)
+[2020年4月16日 -- JS教程·标准库·Object 读书笔记](docs/js/stdlibObject.html)
 
-[2020年4月09日 -- 毕业设计翻译部分](docs/translate.html)
+[2020年4月13日 -- 毕业设计论文部分](docs/final/GraduationThesis.html)
+
+[2020年4月09日 -- 毕业设计翻译部分](docs/final/translate.html)

@@ -1,9 +1,9 @@
+# 翻译：基于省面板数据分析的中国中西部地区住宅房地产价格预测模型研究
+
 <script src="/assets/js/mathconfig.js"></script>
 <script type="text/javascript" id="MathJax-script" async
   src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
 </script>
-
-# 翻译：基于省面板数据分析的中国中西部地区住宅房地产价格预测模型研究
 
 ### A Study on the Real Estate Price Forecast Model in the Midwest of China—Based on Provincial Panel Data Analysis
 

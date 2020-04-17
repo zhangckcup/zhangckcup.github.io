@@ -1,4 +1,4 @@
-(function insertArticleToc() {
+;(function insertArticleToc() {
   var e = document.querySelector("article.content");
   var t = e.querySelector("h2");
   var r = e.querySelectorAll("h2, h3");
