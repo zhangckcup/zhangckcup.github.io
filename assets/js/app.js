@@ -7,7 +7,7 @@
   var isHome = /\/$/.test(window.location.pathname) || /\/index.html$/.test(window.location.pathname);
   r.forEach(function(i){
     if(!i.childElementCount){
-      ts = [' <a href="#'+ i.innerHTML.replace(/\s+/g, "-").replace(/\(\)/,'').toLowerCase() +'">', '</a>'];
+      ts = [' <a href="#'+ i.innerHTML.replace(/\s+/g, "-").replace(/\(\)/,'').replace(/\./,'').toLowerCase() +'">', '</a>'];
       m.push('<li>'+ts.join(i.innerHTML)+'</li>');
       i.innerHTML += ts.join('#');
     }
