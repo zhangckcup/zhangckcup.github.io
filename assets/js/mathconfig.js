@@ -19,9 +19,6 @@ MathJax = {
     useLabelIds: true,         // use label name rather than tag for ids
     multlineWidth: '85%',      // width of multline environment
     maxMacros: 1000,           // maximum number of macro substitutions per expression
-    maxBuffer: 5 * 1024,       // maximum size for the internal TeX string (5K)
-    baseURL:                   // URL for use with links to tags (when there is a <base> tag in effect)
-       (document.getElementsByTagName('base').length === 0) ?
-        '' : String(document.location).replace(/#.*$/, ''))
+    maxBuffer: 5 * 1024        // maximum size for the internal TeX string (5K)
   }
 };
