@@ -18,17 +18,21 @@
 
 ## ABSTRACT
 
+there is ABSTRACT in english.
+
 **Key Words:**
 
 ## 第 1 章 绪论
 
 ### 1.1 研究背景
 
-房地产产业是有关国民经济发展的重要产业，租房价格问题与民生问题息息相关，近年来我国房价不断攀升，租房问题也成为全社会关注的焦点问题之一，因此研究租房价格模型并进行预测，有一定必要。
+房地产产业是有关国民经济发展的重要产业，租房价格问题与民生问题息息相关。近年来我国房价不断攀升，租房问题也成为全社会关注的焦点问题之一，因此研究租房价格模型并对租房价格进行预测有一定研究价值。北京这一一线城市房价在全国首屈一指，外来人口数量巨大，因此租房成为很多人解决住房问题的主要手段。
 
 ### 1.2 文献综述
 
-text here
+在国内关于房价分析的研究中，使用的模型主要有灰色预测模型和线性回归模型[1]。这两个模型的优势是简单快捷，但缺点是得到的结果解释性不强，仅能得到关于未来房价的数值预测。如果选取样本的维度较大，在预测完成后尚需使用主成分分析提取主要因素，对样本数据进行降维。若模型中含有时间因素，则可以运用时差相关分析[2]、马尔科夫链预测[3]等方法进行分析。近年来，由于机器学习的兴起，也有部分学者通过BP神经网络[4]与随机森林[5]进行房价预测。
+
+相关文献对于影响房屋租赁价格因素的选取，首先是空间因素，这点多数文章都有考虑。空间因素中，包括单纯的经纬度因素[5]，以及周围交通情况（如地铁站、所处的小区等）等更精确的条件。李晓鹏[6]在研究北京住宅价格时，引入了“是否位于北京市十二所重点小学学区内”定性指标，并使用了hedonic模型，得到上述定性指标与房价有32%的关联度，这点也为本文所借鉴。此外，还有宏观经济因素，如居民收入水平、国民经济发展水平、利率、金融机构贷款余额等[7]。在房屋本身方面，房屋租赁价格与房屋面积、房屋卧室数量两个因素有较高关联性[8]。在以上文献中，由于选取的数据大多是城区的房屋，所以所处位置对租价影响较小，故这一因素未被考虑。
 
 ### 1.3 论文的主要内容和方法
 
@@ -46,9 +50,83 @@ text here
 
 ## 第 2 章 相关理论概述
 
-### 2.1 多元回归模型
+### 2.1 多元线性回归模型
+
+多元线性回归模型是以多个特征向量作为前提，研究因变量与自变量之间的相关性，从而确立能够体现两者关系的模型，然后依据得到的模型来处理实验数据，并加以预测，多元线性回归方程的矩阵能够体现为：
+
+\\[ y = X\beta + \mu \\]
+
+\\[
+  y = \begin{bmatrix} y_1 \\\\ y_2 \\\\ \vdots \\\\ y_n \end{bmatrix},\\ 
+  \mu = \begin{bmatrix} \mu_1 \\\\ \mu_2 \\\\ \vdots \\\\ \mu_n \end{bmatrix}, \\ 
+  \beta = \begin{bmatrix} \beta_1 \\\\ \beta_2 \\\\ \vdots \\\\ \beta_n \end{bmatrix}, \\
+  X=\begin{bmatrix} 
+  1 & x_{11} & x_{12} &\cdots& x_{1p} \\\\ 
+  1 & x_{21} & x_{22} &\cdots& x_{2p} \\\\ 
+  \vdots & \vdots & \vdots & &\vdots \\\\
+  1 & x_{n1} & x_{n2} &\cdots& x_{np}
+  \end{bmatrix}
+\\]
+
+其中，\\( (x_{i1},x_{i2},\cdots,x_{ip},y_i) \\)是n次独立观测值，\\(\mu \sim N(O,\sigma^2)\\ i=1,2,\ldots,n \\)，且独立同分布，最小二乘估计值 $\hat\beta$ 即 $\beta$ 的最小二乘函数。
+
+\\[ Q(\beta)=(Y-X\beta)^T(Y-X\beta) \\]
+
+达到最小的 $\beta$ 值，估计为：
+
+\\[ \hat\beta=(X^TX)^{-1}X^TY \\]
+
+从而得到回归方程：
+
+\\[ \hat{Y} = \hat{\beta}_0 + \hat{\beta}_1X_1 + \cdots+ \hat{\beta}_p X_p \\]
 
 ### 2.2 灰色模型
+
+对部分信息已知而部分信息未知的系统，我们称之为灰色系统。GM(1,1)灰色预测模型在房屋销售价格预测研究中得到许多学者的认可，而且，安居客网站上统计了近年北京市各区的平均房屋租赁价格，为研究未来北京市各区的房屋租赁价格带来了便利。同时，GM(1,1)模型具有所需样本少，计算量小等优点。
+
+设序列\\(X^{\left( 0 \right)},X^{\left( 1 \right)}\\)，其中\\(X^{\left( 1
+\right)}\\)为\\(X^{\left( 0 \right)}\\)一次累加序列：
+
+\\[
+X^{\left( 0 \right)} = \left( X^{\left( 0 \right)}\left( 1 \right),X^{\left( 0 \right)}\left( 2 \right),\ldots,X^{\left( 0 \right)}\left( n \right) \right),X^{\left( 0 \right)}\left( k \right) \geq 0 , \left( k = 1,2,\ldots,n \right)
+\\]
+
+\\[
+X^{\left( 1 \right)} = \left( X^{\left( 1 \right)}\left( 1 \right),X^{\left( 1
+\right)}\left( 2 \right),\ \ldots,X^{\left( 1 \right)}\left( n \right)
+\right),X^{\left( 1 \right)}\left( k \right) = \sum_{i = 1}^{k}{X^{\left( 0
+\right)}\left( i \right)} , \left( k = 1,2,\ldots,n \right)
+\\]
+
+设\\(Z^{\left( 1 \right)}\\)为\\(X^{\left( 1 \right)}\\)的紧邻均值生产序列：
+
+\\[
+Z^{\left( 1 \right)} = \left( Z^{\left( 1 \right)}\left( 2 \right),Z^{\left( 1 \right)}\left( 3 \right),\ldots,Z^{\left( 1 \right)}\left( n \right) \right),Z^{\left( 1 \right)}\left( k \right) = \frac{1}{2}\left( X^{\left( 1 \right)}\left( k \right) + X^{\left( 1 \right)}\left( k - 1 \right) \right)
+\\]
+
+对数列\\(X^{\left( 1 \right)}\\)建立微分方程：
+
+\\[
+\frac{dX^{\left( 1 \right)}\left( t \right)}{dt} + aX^{\left( 1 \right)}\left( t \right) = b \tag{1}
+\\]
+
+其中，\\(dX^{\left( 1 \right)}\left( t
+\right)/dt\\)称为灰倒数，a称为发展系数，\\(X^{\left( 1 \right)}\left( t
+\right)\\)称为白化背景值。运用最小二乘法估计a和b的值后，将a，b带入式(1)求解微分方程，解为：
+
+\\[
+X^{\left( 1 \right)}\left( t \right) = \left( X^{\left( 0 \right)}\left( 1 \right) - \frac{b}{a} \right)e^{- a\left( t - 1 \right)} + \frac{b}{a}
+\\]
+
+于是得到预测值：
+
+\\[
+{\hat{x}}^{\left( 1 \right)}\left( k + 1 \right) = \left( X^{\left( 0 \right)}\left( 1 \right) - \frac{b}{a} \right)e^{- ak} + \frac{b}{a}\ , \left(k = 1,2,\ldots,n - 1\right)
+\\]
+
+\\[
+{\hat{x}}^{\left( 0 \right)}\left( k + 1 \right) = {\hat{x}}^{\left( 1 \right)}\left( k + 1 \right) - {\hat{x}}^{\left( 1 \right)}\left( k \right) ,\left(k = 1,2,\ldots,n - 1\right)
+\\]
 
 ## 第 3 章 数据来源及描述性统计分析
 

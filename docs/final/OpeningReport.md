@@ -31,7 +31,7 @@
 
 此研究中使用的北京各区的各项宏观数据主要来源于北京统计局的官方网站所发布的北京区域统计年鉴，采用官方数据是一种可信度高且方便的数据获取途径。根据文献资料表明，反映房屋租赁价格水平的通常是住宅租赁价格指数，而住宅租赁价格指数是对住宅租金的总体水平变化和相对变化在数量上的综合反映，一般无法给予租房者进行直观判断，因此本研究选择房屋租赁价格作为研究的因变量。而对于房屋租赁价格的数据，本研究利用网络爬虫原理，利用Python从链家等租房网站上抓取北京各区的租房价格，这里我们为了降低面积与户型对租房价格的影响，统一选择65平方米左右且户型两室一厅的房源进行考察，并同时辅以安居客租房信息中心的统计数据为参考。
 
-#### 2.2描述性统计分析
+#### 2.2.2 描述性统计分析
 
 在数据选取上，考虑地区生产总值、常驻人口、人口密度、人均可支配收入、建筑业总产值与房屋竣工面积六个因素。利用多元线性回归模型初步分析所获取到的数据，选取回归系数显著性水平较高的自变量，如地区生产总值、人均可支配收入、建筑业总产值与房屋竣工面积，并舍弃剩余自变量。
 
@@ -147,7 +147,7 @@ X^{\left( 0 \right)} = \left( X^{\left( 0 \right)}\left( 1 \right),X^{\left( 0 \
 X^{\left( 1 \right)} = \left( X^{\left( 1 \right)}\left( 1 \right),X^{\left( 1
 \right)}\left( 2 \right),\ \ldots,X^{\left( 1 \right)}\left( n \right)
 \right),X^{\left( 1 \right)}\left( k \right) = \sum_{i = 1}^{k}{X^{\left( 0
-\right)}\left( i \right)}\text{\ \ }\left( k = 1,2,\ldots,n \right)
+\right)}\left( i \right)}\left( k = 1,2,\ldots,n \right)
 \\]
 
 设\\(Z^{\left( 1 \right)}\\)为\\(X^{\left( 1 \right)}\\)的紧邻均值生产序列：
@@ -191,7 +191,7 @@ X^{\left( 1 \right)}\left( t \right) = \left( X^{\left( 0 \right)}\left( 1 \righ
 \\]
 
 \\[
-{\hat{x}}^{\left( 0 \right)}\left( k + 1 \right) = {\hat{x}}^{\left( 1 \right)}\left( k + 1 \right) - {\hat{x}}^{\left( 1 \right)}\left( k \right)\ \ ,k = 1,2,\ldots,n - 1.
+{\hat{x}}^{\left( 0 \right)}\left( k + 1 \right) = {\hat{x}}^{\left( 1 \right)}\left( k + 1 \right) - {\hat{x}}^{\left( 1 \right)}\left( k \right) ,k = 1,2,\ldots,n - 1.
 \\]
 
 按上述方法编写MATLAB程序得到预测值，为了检验模型的预测效果，选取北京市四个区域比较真实值与预测值。如图7所示，真实值与预测值之间没有较大的偏差，同时，预测曲线很好地描绘出选取的四个地区房屋平均租赁价格未来的发展趋势，为我们预测房屋租赁价格趋势提供了参考。
