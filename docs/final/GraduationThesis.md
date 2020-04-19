@@ -67,10 +67,8 @@ there is ABSTRACT in english.
   \mu = \begin{bmatrix} \mu_1 \\\\ \mu_2 \\\\ \vdots \\\\ \mu_n \end{bmatrix}, \\ 
   \beta = \begin{bmatrix} \beta_1 \\\\ \beta_2 \\\\ \vdots \\\\ \beta_n \end{bmatrix}, \\
   X=\begin{bmatrix} 
-  1 & x_{11} & x_{12} &\cdots& x_{1p} \\\\ 
-  1 & x_{21} & x_{22} &\cdots& x_{2p} \\\\ 
-  \vdots & \vdots & \vdots & &\vdots \\\\
-  1 & x_{n1} & x_{n2} &\cdots& x_{np}
+  1 & x_{11} & x_{12} &\cdots& x_{1p} \\\\ 1 & x_{21} & x_{22} &\cdots& x_{2p} \\\\
+  \vdots & \vdots & \vdots & ~ &\vdots \\\\ 1 & x_{n1} & x_{n2} &\cdots& x_{np}
   \end{bmatrix}
 \\]
 
