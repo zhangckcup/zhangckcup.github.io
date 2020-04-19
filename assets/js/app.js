@@ -5,7 +5,6 @@
   var m = ['<ul>'];
   var ts = [];
   var isHome = /\/$/.test(window.location.pathname) || /\/index.html$/.test(window.location.pathname);
-  e.innerHTML = e.innerHTML.replace('<\\br>','\\');
   r.forEach(function(i){
     if(!i.childElementCount){
       ts = [' <a href="#'+ i.id +'">', '</a>'];
@@ -16,8 +15,8 @@
   m.push('</ul>');
   if (t  && r.length >= 2 && !isHome) {
       var c = document.createElement("div");
-      c.setAttribute("class", "article-toc"),
-      c.innerHTML = '<h3>目录</h3>'+m.join('\n'),
+      c.setAttribute("class", "article-toc");
+      c.innerHTML = '<h3>目录</h3>'+m.join('\n');
       e.insertBefore(c, t)
   }
 })();
