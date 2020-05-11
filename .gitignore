@@ -3,4 +3,3 @@ _site
 Gemfile.lock
 *.gem
 *.asv
-assets/css/bootstrap.c*

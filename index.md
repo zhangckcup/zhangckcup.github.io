@@ -16,6 +16,8 @@
 
 [2020年4月16日 -- JS教程·标准库·Object 读书笔记](docs/js/stdlibObject.html)
 
+[2020年5月11日 -- 毕业论文基本写作规范自查](docs/final/ThesisFormat.html)
+
 [2020年4月13日 -- 毕业设计开题报告](docs/final/OpeningReport.html)
 
 [2020年4月12日 -- 毕业设计论文部分](docs/final/GraduationThesis.html)
