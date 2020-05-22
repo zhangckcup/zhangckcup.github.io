@@ -80,23 +80,47 @@ dataLm <- data.frame(
   x1 = x$GDP,
   x2 = x$人均可支配收入,
   x3 = x$人均消费支出,
-  x4 = x$建筑业总产值,
-  x5 = x$房屋竣工面积,
-  x6 = x$住宅销售面积,
+#  x4 = x$建筑业总产值,
+#  x5 = x$房屋竣工面积,
+#  x6 = x$住宅销售面积,
   x7 = x$人口密度,
-  x8 = x$常住人口,
-  x9 = x$外来人口,
-  x10 = x$房屋面积占比,
-  x11 = x$全社会固定资产投资,
-  x12 = x$入境旅游人数,
-  x13 = x$社会消费品零售总额,
-  Y = x$安居客房租数据
+#  x8 = x$常住人口,
+#  x9 = x$外来人口,
+#  x10 = x$房屋面积占比,
+#  x11 = x$全社会固定资产投资,
+#  x12 = x$入境旅游人数,
+#  x13 = x$社会消费品零售总额,
+  Y = x$安居客房租数据,
+  Y2 = x$`平均租赁价格（链家）`
 )
 ## 向后回归
 library(MASS)
 tlm <- lm(Y~x1+x2+x3+x4+x5+x6+x7+x8+x9+x10+x11+x12+x13, data = dataLm)
-summary(tlm)
-par(mfrow=c(2,2))
-plot(tlm)
 tstep <- step(tlm)
-drop(tstep)
+
+fit2 <- lm(Y2~x1+x2+x4+x5, data = dataLm)
+summary(fit2)
+plot(fit2)
+
+## 系统聚类
+dataLm <- data.frame(
+  x2 = x$人均可支配收入,
+  x3 = x$人均消费支出,
+  x7 = x$人口密度,
+  Y = x$安居客房租数据
+)
+rownames(dataLm) <- x$地区
+
+lmdist <- dist(dataLm , method = "euclidean" , diag = FALSE, upper = FALSE, p = 2)
+# 最短距离法
+lmclust <- hclust(lmdist , method = "single")
+# 最长距离法
+lmclust <- hclust(lmdist , method = "complete")
+# 类平均法
+lmclust <- hclust(lmdist , method = "average")
+# ward法
+lmclust <- hclust(lmdist , method = "ward.D")
+
+summary(lmclust)
+plot(lmclust)
+rect.hclust(lmclust, k=3)
