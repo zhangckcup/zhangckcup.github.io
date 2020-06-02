@@ -12,6 +12,8 @@
 
 ## Blog List
 
+[2020年6月2日 -- 地图应用demo](docs/mapdemo/index.html)
+
 [2020年4月17日 -- JS教程·标准库·Array 读书笔记](docs/js/stdlibArray.html)
 
 [2020年4月16日 -- JS教程·标准库·Object 读书笔记](docs/js/stdlibObject.html)
