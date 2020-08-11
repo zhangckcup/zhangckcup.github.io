@@ -12,6 +12,8 @@
 
 ## Blog List
 
+[2020年8月11日 -- 3D地图框架cesium应用demo](docs/cesium/)
+
 [2020年6月2日 -- 地图应用demo](docs/mapdemo/)
 
 [2020年4月17日 -- JS教程·标准库·Array 读书笔记](docs/js/stdlibArray.html)
